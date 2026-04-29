@@ -39,6 +39,10 @@ endif()
 # Install Targets
 # --------------------------------------------------------------------------------------------------------
 
+if(NOT PACKAGEPROJECT)
+    return()
+endif()
+
 include("cmake/cpm.cmake")
 
 CPMFindPackage(
